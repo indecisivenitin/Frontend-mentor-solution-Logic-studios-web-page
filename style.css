@@ -1,0 +1,271 @@
+@font-face {
+    font-family: P1;
+    src: url(./Alata-Regular.ttf);
+}
+@font-face {
+    font-family: P2;
+    src: url(./JosefinSans-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+#page1{
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(./image-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#page1 nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 4vw 7vw;
+}
+nav h1{
+    font-weight:bold;
+    font-family: P1;
+    font-size: 2.5vw;
+}
+nav .navigation{
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    align-items: center;
+}
+nav .navigation a{
+    text-decoration: none;
+    color: white;
+    font-family: P1;
+    font-weight: 600;
+}
+.page1Text{
+    margin: 4vw 7vw;
+    width: 30%;
+    height: 15vw;
+    padding: 2vw;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+.page1Text p{
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-family: P2;
+    font-size: 3vw;
+    color: white;
+}
+#page2{
+    width: 100%;
+    min-height: 90vh;
+    background-color: white;
+    position: relative;
+}
+#page2 .image{
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+#page2 .page2Text{
+    width: 36vw;
+    height: 21.7vw;
+    position: absolute;
+    background-color: white;
+    top: 45%;
+    left:50%;
+    text-align: center;
+    padding: 4vw 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+#page2 .page2Text h1{
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-family: P2;
+}
+#page2 .page2Text p{
+    font-weight: 100;
+    color: gray;
+}
+#page2 .page2Text h1 ,p {
+    color: black;
+    text-align: justify;
+}
+
+
+#page3{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+#page3 #page3Nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 9.8vw;
+}
+#page3 #page3Nav p{
+    font-size: 3vw;
+    font-family: P2;
+    font-weight: 300;
+}
+#page3 #page3Nav button{
+    background-color: white;
+    padding: 0.7vw 1.8vw;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: P2;
+}
+
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  padding:  3vw 9.8vw;
+}
+
+#grid-container .panel {
+  text-align: center;
+  background-color: #f5f5f5; 
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.panel img {
+  width: 100%;
+  height: auto;
+
+}
+
+.panel:hover {
+  transform: scale(1.05);
+}
+
+#page4 footer{
+    background-color: black;
+    width: 100%;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page4 .leftFooter{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 4vw 9.8vw;
+}
+.leftFooter .part1 p{
+    color: white;
+    font-size: 1.7vw;
+    font-weight: bold;
+}
+.leftFooter .part2{
+    padding-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page4 .part2 p{
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#page4 .part2 a{
+    text-decoration: none;
+    color:white
+}
+#page4 .rightFooter{
+    height: 100%;
+    width: 50%;
+    padding: 4vw 9.8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#page4 .rightFooter .partA{
+    display: flex;
+    align-items:center;
+    gap: 1vw;
+    justify-content: right;  
+}
+#page4 .rightFooter .partB{
+    display: flex;
+    padding-top: 2vw;
+    justify-content: right;
+}
+.rightFooter .partB p{
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px){
+    #page1 nav h1{
+        font-size: 6vw;
+    }
+    #page1 nav .navigation{
+        display: none;
+    }
+    #page1 .page1Text{
+       width: 80%;
+       height: auto;
+    }
+    #page1 .page1Text p{
+        font-size: 10vw;
+    }
+    #page2{
+        max-width: 600px;
+        height: 800px;
+        padding: 0;
+        margin: 0;
+    }
+    #page2 .image img{
+        width: 500px;
+        padding-right:10px;
+    }
+    #page2 .image{
+        /* display: block; */
+        position: absolute;
+        
+    }
+    #page2 .page2Text{
+        width: 600px;
+        height: 200px;
+        padding: 4vw 9.8vw;
+        /* display: flex;
+        flex-direction: column;
+        gap: 20px; */
+        position: relative;
+        align-items: center;
+        display: none;
+        
+    }
+}
